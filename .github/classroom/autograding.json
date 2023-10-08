@@ -1,0 +1,24 @@
+{
+  "tests": [
+    {
+      "name": "Set 1",
+      "setup": "g++ -o a.out ./Homework/HW10/hw10-2-compare.cpp",
+      "run": "./a.out",
+      "input": "U\r\nv\r\nG\r\nk\r\nR\r\nm\r\nq\r\nY\r\n",
+      "output": "String = U v G k R m q",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "Set 2",
+      "setup": "g++ -o a.out ./Homework/HW10/hw10-2-compare.cpp",
+      "run": "./a.out",
+      "input": "H\r\ne\r\nl\r\nl\r\no\r\ny\r\n",
+      "output": "String = H e l l o",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    }
+  ]
+}
