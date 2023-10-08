@@ -38,4 +38,34 @@
         String = H e l l o
 
 */
+#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+    char input;
+    char *result = NULL;
+    int size = 0;
+
+    while (1) {
+        printf("Enter 1 character : \n");
+        scanf(" %c", &input);
+
+        if (input == 'Y' || input == 'y') {
+            break;
+        }
+
+        // เพิ่มอักขระลงในอาเรย์
+        size++;
+        result = (char *)realloc(result, size * sizeof(char));
+        result[size - 1] = input;
+    }
+
+    printf("String = ");
+    for (int i = 0; i < size; i++) {
+        printf("%c ", result[i]);
+    }
+
+    free(result); // คืนหน่วยความจำที่ถูกจอง
+    return 0;
+}
 
